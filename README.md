@@ -1,67 +1,67 @@
 # Titanic Survival Prediction
 
-Bu proje, Kaggle'ın ünlü Titanic veri seti üzerinde makine öğrenmesi modelleri kullanarak yolcu hayatta kalma tahmini yapmayı amaçlamaktadır.
+This project aims to predict passenger survival on the famous Kaggle Titanic dataset using machine learning models.
 
-## Proje Yapısı
+## Project Structure
 
 ```
 Titanic_Data/
 ├── Data/
 │   └── Raw/
-│       ├── train.csv      # Eğitim verisi
-│       └── test.csv       # Test verisi
+│       ├── train.csv      # Training data
+│       └── test.csv       # Test data
 ├── Src/
-│   └── baseline.ipynb     # Temel analiz ve model notebook'u
+│   └── baseline.ipynb     # Baseline analysis and model notebook
 └── Submissions/
-    ├── submission_lr_baseline.csv  # Logistic Regression sonuçları
-    └── submission_rf.csv           # Random Forest sonuçları
+    ├── submission_lr_baseline.csv  # Logistic Regression results
+    └── submission_rf.csv           # Random Forest results
 ```
 
-## Veri Seti
+## Dataset
 
-Titanic veri seti şu özellikleri içerir:
-- **PassengerId**: Yolcu kimlik numarası
-- **Survived**: Hayatta kalma durumu (0: Hayır, 1: Evet)
-- **Pclass**: Bilet sınıfı (1, 2, 3)
-- **Name**: Yolcu adı
-- **Sex**: Cinsiyet
-- **Age**: Yaş
-- **SibSp**: Gemideki kardeş/eş sayısı
-- **Parch**: Gemideki ebeveyn/çocuk sayısı
-- **Ticket**: Bilet numarası
-- **Fare**: Bilet ücreti
-- **Cabin**: Kamara numarası
-- **Embarked**: Binme limanı (C, Q, S)
+The Titanic dataset contains the following features:
+- **PassengerId**: Passenger identification number
+- **Survived**: Survival status (0: No, 1: Yes)
+- **Pclass**: Ticket class (1, 2, 3)
+- **Name**: Passenger name
+- **Sex**: Gender
+- **Age**: Age
+- **SibSp**: Number of siblings/spouses aboard
+- **Parch**: Number of parents/children aboard
+- **Ticket**: Ticket number
+- **Fare**: Ticket fare
+- **Cabin**: Cabin number
+- **Embarked**: Port of embarkation (C, Q, S)
 
-## Kullanılan Modeller
+## Models Used
 
-1. **Logistic Regression**: Temel sınıflandırma modeli
-2. **Random Forest**: Ensemble yöntemi ile gelişmiş tahmin
+1. **Logistic Regression**: Basic classification model
+2. **Random Forest**: Advanced prediction using ensemble method
 
-## Çalıştırma
+## Getting Started
 
-1. Gerekli kütüphaneleri yükleyin:
+1. Install required libraries:
 ```bash
 pip install pandas numpy scikit-learn matplotlib seaborn jupyter
 ```
 
-2. Jupyter notebook'u çalıştırın:
+2. Run the Jupyter notebook:
 ```bash
 jupyter notebook Src/baseline.ipynb
 ```
 
-## Sonuçlar
+## Results
 
-Model performansları `Submissions/` klasöründe CSV formatında saklanmıştır.
+Model performances are stored in CSV format in the `Submissions/` folder.
 
-## Katkıda Bulunma
+## Contributing
 
-1. Bu repository'yi fork edin
-2. Yeni bir branch oluşturun (`git checkout -b feature/AmazingFeature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add some AmazingFeature'`)
-4. Branch'inizi push edin (`git push origin feature/AmazingFeature`)
-5. Bir Pull Request oluşturun
+1. Fork this repository
+2. Create a new branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Create a Pull Request
 
-## Lisans
+## License
 
-Bu proje MIT lisansı altında lisanslanmıştır.
+This project is licensed under the MIT License.
